@@ -8,5 +8,6 @@
   <description>java-learning-parent</description>
   <modules>
   	<module>java-8</module>
+  	<module>java-7</module>
   </modules>
 </project>
