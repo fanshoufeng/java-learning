@@ -2,14 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.fanshoufeng</groupId>
-    <artifactId>java-learning-parent</artifactId>
+    <artifactId>java-7</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>java-7</artifactId>
-  <packaging>pom</packaging>
-  <name>java-7</name>
-  <description>java-7</description>
-  <modules>
-  	<module>compare-two-directory-in-java-7</module>
-  </modules>
+  <artifactId>compare-two-directory-in-java-7</artifactId>
+  <name>compare-two-directory-in-java-7</name>
+  <description>compare-two-directory-in-java-7</description>
 </project>
