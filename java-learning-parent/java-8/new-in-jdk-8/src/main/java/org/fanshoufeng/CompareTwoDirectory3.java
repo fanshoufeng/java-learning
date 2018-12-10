@@ -12,9 +12,10 @@ public class CompareTwoDirectory3 {
 		try {
 			Files.walk(Paths.get(directory1), FileVisitOption.FOLLOW_LINKS)
 				.filter(path -> path.toString().endsWith(".java"))
-				.filter(path -> Files.notExists(Paths.get(path.toString().replace(directory1, directory2)), LinkOption.NOFOLLOW_LINKS))
-				.sorted((path1, path2) -> path1.toString().compareTo(path2.toString()))
-				.forEach(path -> System.out.println(path.toString().replace(directory1 + "\\", "")));
+				.map(path -> path.toString())
+				.filter(path -> Files.notExists(Paths.get(path.replace(directory1, directory2)), LinkOption.NOFOLLOW_LINKS))
+				.sorted((path1, path2) -> path1.compareTo(path2))
+				.forEach(path -> System.out.println(path.replace(directory1 + "\\", "")));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
