@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.fanshoufeng;
+package org.fanshoufeng.compare;
 
 import java.io.File;
 import java.util.ArrayList;
